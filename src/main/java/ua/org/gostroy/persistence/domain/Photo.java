@@ -13,7 +13,7 @@ public class Photo {
     private Date dateTimeOfRecive;
     private String name;
     private Long size;
-    private Object image;
+    private byte[] image;
 
     public Date getDateTimeOfRecive() {
         return dateTimeOfRecive;
@@ -43,7 +43,7 @@ public class Photo {
         return image;
     }
 
-    public void setImage(Object image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 

@@ -13,12 +13,12 @@ public class Photo {
     private Date dateTimeOfRecive;
     private String name;
     private Long size;
-    private Object image;
+    private byte[] image;
 
     //currently 5 minutes
     private final static long ACCEPT_CANCEL_TIME = 1000 * 60 * 5;
 
-    public Photo(UUID key, Date dateTimeOfRecive, String name, Long size, Object image) {
+    public Photo(UUID key, Date dateTimeOfRecive, String name, Long size, byte[] image) {
         this.key = key;
         this.dateTimeOfRecive = dateTimeOfRecive;
         this.name = name;
@@ -26,7 +26,7 @@ public class Photo {
         this.image = image;
     }
 
-    public Photo(Date dateTimeOfRecive, String name, Long size, Object image) {
+    public Photo(Date dateTimeOfRecive, String name, Long size, byte[] image) {
         this.dateTimeOfRecive = dateTimeOfRecive;
         this.name = name;
         this.size = size;
@@ -62,7 +62,7 @@ public class Photo {
         return image;
     }
 
-    public void setImage(Object image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 

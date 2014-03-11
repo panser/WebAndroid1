@@ -11,7 +11,7 @@ public class PhotoDetails {
     private Date dateTimeOfRecive;
     private String name;
     private Long size;
-    private Object image;
+    private byte[] image;
 
     public PhotoDetails(UUID key) {
         this.key = key;
@@ -53,11 +53,11 @@ public class PhotoDetails {
         this.size = size;
     }
 
-    public Object getImage() {
+    public byte[] getImage() {
         return image;
     }
 
-    public void setImage(Object image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 }
